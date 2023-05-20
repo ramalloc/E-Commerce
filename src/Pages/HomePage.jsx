@@ -4,6 +4,8 @@ import Announcements from '../Components/Announcements';
 import Slider from '../Components/Slider';
 import Categories from '../Components/Categories';
 import Products from '../Components/Products';
+import Newsletter from '../Components/Newsletter';
+import Footer from '../Components/Footer';
 const HomePage = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const HomePage = () => {
       <Slider />'
       <Categories />
       <Products />
+      <Newsletter />
+      <Footer />
     </>
   )
 }
