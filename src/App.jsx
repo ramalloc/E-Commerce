@@ -1,11 +1,10 @@
 import './App.css';
-import ProductList from './Pages/ProductList';
+import Register from './Pages/Register';
 
 function App() {
   return (
     <>
-    <ProductList />
-    
+    <Register />
     </>
   );
 }
