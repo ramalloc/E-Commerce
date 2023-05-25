@@ -10,6 +10,7 @@ const Container = styled.div`
     ),
     url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
       center;
+      background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,15 +25,42 @@ const Wrapper = styled.div`
 const Title = styled.h1`
     font-size: 24px;
     font-weight: 300;
+    text-align: center;
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+    display: flex;
+    flex-wrap: wrap;
+`;
 
-const Input = styled.input``;
+const Input = styled.input`
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
+    `;
 
-const Aggreement = styled.span``;
+const ButtonContainer = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 5px;
 
-const Button = styled.button``;
+`;
+const Aggreement = styled.span`
+    font-size: 14px;
+    margin: 20px 0px;
+`;
+
+const Button = styled.button`
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+`;
 
 
 const Register = () => {
@@ -47,11 +75,13 @@ const Register = () => {
                     <Input placeholder="E-mail" />
                     <Input placeholder="Password" />
                     <Input placeholder="Confirm Password" />
-                    <Aggreement>
-                        By creating an account, I consent to the processing of my personal
-                        data in accordance with the <b>PRIVACY POLICY</b>
-                    </Aggreement>
-                    <Button>CREATE</Button>
+                    <ButtonContainer>
+                        <Aggreement>
+                            By creating an account, I consent to the processing of my personal
+                            data in accordance with the <b>PRIVACY POLICY</b>
+                        </Aggreement>
+                        <Button>CREATE</Button>
+                    </ButtonContainer>
                 </Form>
             </Wrapper>
 
